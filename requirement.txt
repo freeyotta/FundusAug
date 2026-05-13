@@ -1,0 +1,12 @@
+# 核心矩阵运算与图像处理
+numpy
+opencv-python
+pillow
+scipy
+
+# 深度学习与增强库
+torch
+albumentations>=1.0.0
+
+# 可视化与测试
+matplotlib
