@@ -43,7 +43,6 @@ def run_bench(img_path='test_img.jpg'):
         axes[i].axis('off')
 
     plt.tight_layout()
-    # 建议保存一个清晰的文件名发给老师
     output_fn = "result.jpg"
     plt.savefig(output_fn, dpi=300)
     print(f"Success! 新的对比图已保存: {output_fn}")
