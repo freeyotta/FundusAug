@@ -147,11 +147,11 @@ class FundusHypothesisAug:
         elif mode == "Mixed":
             # Mixed 逻辑：完全随机的临床复合退化流水线
             res = image.copy()
-            
+      
             # 1. 几何空间层（50% 概率触发：模拟患者配合度不佳、对焦歪斜）
-            if random.random() < 0.5:
-                res = self.geo(image=res)['image']
-                
+#            if random.random() < 0.5:
+#                res = self.geo(image=res)['image']
+             
             # 2. 色彩波动层（40% 概率触发：模拟不同设备传感器的光照/伽马环境变动）
             if random.random() < 0.4:
                 res = self.color(image=res)['image']
